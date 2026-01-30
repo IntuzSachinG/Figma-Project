@@ -4,16 +4,12 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  width: 1440px;
-  height: 7785px;
-}
-
+html,
 body {
   width: 100%;
-  height: 7785px;
-  opacity: 1;
-  background: #ffffff;
+  height: 100%;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
+
+

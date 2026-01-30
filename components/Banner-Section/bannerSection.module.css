@@ -1,0 +1,120 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #eef6ff;
+  border-bottom: 1px solid #cfe0ff;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1440px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.imglogo {
+  width: 34px;
+  height: 34px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #2952ce;
+}
+
+.sub {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #5c85ff;
+}
+
+.info {
+  display: flex;
+  gap: 40px;
+  font-size: 15px;
+  color: #142349;
+}
+
+.infoItem1,
+.infoItem2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon1,
+.icon2 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #2952ce;
+}
+
+.btn {
+  padding: 0 28px;
+  height: 40px;
+  border-radius: 999px;
+  border: none;
+  background: #2f5eff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textbtn {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    padding: 0 40px;
+  }
+
+  .info {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    height: auto;
+    padding: 12px 20px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .sub {
+    font-size: 11px;
+  }
+
+  .textbtn {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
