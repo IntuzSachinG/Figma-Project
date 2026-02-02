@@ -1,7 +1,7 @@
 import Link from "next/link";
 import classes from "./navbarSection.module.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { IoSearchCircleOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export default function MainNavbar() {
   return (
@@ -28,7 +28,7 @@ export default function MainNavbar() {
           className={classes.Input}
         />
         <button className={classes.searchBtn}>
-          <IoSearchCircleOutline />
+          <Image src="/Search.png" alt="search icon" width={36} height={32} />
         </button>
       </div>
     </nav>

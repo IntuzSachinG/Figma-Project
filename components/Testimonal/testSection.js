@@ -1,30 +1,64 @@
 import Image from "next/image";
 import classes from "./testSection.module.css";
-import { MdStarBorder } from "react-icons/md";
+import { MdStar, MdStarBorder } from "react-icons/md";
 
+const testimonials = [
+  {
+    id: 1,
+    img: "/Group 38.svg",
+    name: "Ryan Gigs",
+    role: "Patient",
+    rating: 5,
+    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.",
+  },
+  {
+    id: 2,
+    img: "/Group 38 (1).svg",
+    name: "Sophia Lee",
+    role: "Patient",
+    rating: 4,
+    text: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.",
+  },
+  {
+    id: 3,
+    img: "/Group 38 (2).svg",
+    name: "Michael John",
+    role: "Patient",
+    rating: 5,
+    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.",
+  },
+  {
+    id: 4,
+    img: "/Group 38 (3).svg",
+    name: "Emma Watson",
+    role: "Patient",
+    rating: 4,
+    text: "Et harum quidem rerum facilis est et expedita distinctio nam libero tempore.",
+  },
+];
 
-function TestimonialCard() {
+function TestimonialCard({ data }) {
   return (
     <div className={classes.card}>
       <div className={classes.cardAvatar}>
-        <Image src="/user4.jpg" alt="" width={48} height={48} />
+        <Image src={data.img} alt={data.name} width={48} height={48} />
       </div>
 
-      <div className={classes.stars}><MdStarBorder /><MdStarBorder /><MdStarBorder /><MdStarBorder /><MdStarBorder /></div>
+      <div className={classes.stars}>
+        {[...Array(5)].map((_, i) =>
+          i < data.rating ? <MdStar key={i} /> : <MdStarBorder key={i} />,
+        )}
+      </div>
 
-      <p className={classes.text}>
-        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-        impedit quo minus id quod.
-      </p>
+      <p className={classes.text}>{data.text}</p>
 
       <div className={classes.author}>
-        <strong>Ryan Gigs</strong>
-        <span>Patient</span>
+        <strong>{data.name}</strong>
+        <span>{data.role}</span>
       </div>
     </div>
   );
 }
-
 
 export default function TestimonialSection() {
   return (
@@ -39,33 +73,16 @@ export default function TestimonialSection() {
           </h2>
 
           <div className={classes.orbit}>
-            <div className={classes.circle} />
-
-            <div className={`${classes.avatar} ${classes.avatar1}`}>
-              <Image src="/user1.jpg" alt="" width={56} height={56} />
-            </div>
-
-            <div className={`${classes.avatar} ${classes.avatar2}`}>
-              <Image src="/user2.jpg" alt="" width={56} height={56} />
-            </div>
-
-            <div className={`${classes.avatar} ${classes.avatar3}`}>
-              <Image src="/user3.jpg" alt="" width={56} height={56} />
-            </div>
-
-            <div className={classes.badge}>Very Good Experience...</div>
-            <div className={classes.badgeSmall}>Very Good Service...</div>
+            <Image src="/Group 37.svg" alt="" width={472} height={410} />
           </div>
         </div>
 
         <div className={classes.cards}>
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
+          {testimonials.map((item) => (
+            <TestimonialCard key={item.id} data={item} />
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
