@@ -14,18 +14,20 @@ import TestimonialSection from "@/components/Testimonal/testSection";
 export default function HomePage() {
   return (
     <>
-      <TopInfoBanner />
-      <MainNavbar />
-      <Hero />
-      <ClinicPartners />
-      <AboutSection />
-      <ServicesSection />
-      <StatsSection />
-      <DentistSection />
-      <AppointmentBanner />
-      <TestimonialSection />
-      <BlogSection />
-      <Footer />
+      <div className="container">
+        <TopInfoBanner />
+        <MainNavbar />
+        <Hero />
+        <ClinicPartners />
+        <AboutSection />
+        <ServicesSection />
+        <StatsSection />
+        <DentistSection />
+        <AppointmentBanner />
+        <TestimonialSection />
+        <BlogSection />
+        <Footer />
+      </div>
     </>
   );
 }

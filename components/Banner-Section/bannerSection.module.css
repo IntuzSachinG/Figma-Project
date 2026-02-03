@@ -1,110 +1,262 @@
 .wrapper {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #eef6ff;
-  border-bottom: 1px solid #cfe0ff;
-}
-
-.banner {
-  width: 100%;
   max-width: 1440px;
+
   height: 60px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 120px;
+  opacity: 1;
+  margin-top: 16px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #c2d1ff;
 }
 
 .logo {
   display: flex;
-  align-items: center;
+  width: 163px;
+  height: 44px;
+  opacity: 1;
+  margin-left: 120px;
   gap: 8px;
 }
 
-.imglogo {
-  width: 34px;
-  height: 34px;
+.logoimage {
+  width: 42;
+  height: 42;
+  opacity: 1;
 }
 
 .logoText {
   display: flex;
   flex-direction: column;
   line-height: 1;
+
+  width: 111px;
+  height: 44px;
+
+  opacity: 1;
 }
 
 .brand {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 111;
+  height: 28;
+
+  opacity: 1;
+
+  font-family: Plus Jakarta Sans;
   font-weight: 600;
+  font-style: SemiBold;
   font-size: 22px;
+  left: 170px;
+  line-height: 100%;
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
   color: #2952ce;
 }
 
 .sub {
-  font-family: "DM Sans", sans-serif;
+  width: 111;
+  height: 16;
+
+  opacity: 1;
+
+  font-family: DM Sans;
   font-weight: 500;
+  font-style: Medium;
   font-size: 12px;
+
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
   color: #5c85ff;
+  top: 44px;
 }
 
 .info {
   display: flex;
+
+  width: 410px;
+  height: 24px;
+  opacity: 1;
+  margin-top: 8px;
+  margin-left: 392px;
   gap: 40px;
+}
+
+.location {
+  width: 195px;
+  height: 24px;
+  display: flex;
+  opacity: 1;
+  gap: 12px;
+}
+
+.icon1 {
+  color: #142349;
+  width: 19px;
+  height: 24px;
+
+  opacity: 1;
+}
+
+.text1 {
+  width: 164px;
+  height: 20px;
+
+  opacity: 1;
+  font-family: DM Sans;
+  font-weight: 300;
+  font-style: Light;
   font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
   color: #142349;
 }
 
-.infoItem1,
-.infoItem2 {
+.phone {
+  width: 175px;
+  height: 24px;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  opacity: 1;
+  gap: 12px;
+  position: relative;
 }
 
-.icon1,
 .icon2 {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  color: #2952ce;
+  width: 24px;
+  height: 24px;
+
+  opacity: 1;
 }
 
-.btn {
-  padding: 0 28px;
+.text2 {
+  width: 139px;
+  height: 20px;
+
+  opacity: 1;
+  font-family: DM Sans;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 15px;
+
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  color: #142349;
+  left: 36px;
+}
+
+.button {
+  width: 186px;
   height: 40px;
-  border-radius: 999px;
+  opacity: 1;
   border: none;
-  background: #2f5eff;
-  cursor: pointer;
+
+  margin-left: 49px;
+  gap: 10px;
+  border-radius: 192px;
+  padding-top: 10.5px;
+  padding-right: 28px;
+  padding-bottom: 10.5px;
+  padding-left: 28px;
+  background: #3366ff;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .textbtn {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 130px;
+  height: 19px;
+  opacity: 1;
+
+  font-family: Plus Jakarta Sans;
   font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-style: SemiBold;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  vertical-align: middle;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
-@media (max-width: 1024px) {
-  .banner {
-    padding: 0 40px;
+@media (min-width: 1441px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    margin-left: 40px;
   }
 
   .info {
+    margin-left: auto;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    height: auto;
+    padding: 12px 24px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .info {
+    margin-left: 0;
+    gap: 24px;
+  }
+
+  .button {
+    margin-left: 0;
+  }
+
+  .info,
+  .button {
     display: none;
   }
 }
 
-@media (max-width: 600px) {
-  .banner {
-    height: auto;
-    padding: 12px 20px;
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 
+  .logo {
+    margin-left: 0;
+  }
+
+  .info {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    gap: 12px;
+  }
+
+  .button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .info,
+  .button {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
   .brand {
     font-size: 18px;
   }
@@ -113,8 +265,12 @@
     font-size: 11px;
   }
 
+  .text1,
+  .text2 {
+    font-size: 14px;
+  }
+
   .textbtn {
-    font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
   }
 }

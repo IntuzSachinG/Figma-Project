@@ -4,17 +4,16 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function AboutSection() {
   return (
-    <section className={classes.section}>
       <div className={classes.container}>
         <div className={classes.imageWrap}>
-          <div className={classes.blueBg}></div>
+     
 
           <Image
             src="/Group 22.svg"
             alt="Doctor"
-            width={360}
-            height={480}
-            className={classes.doctorImg}
+            width={491}
+            height={523}
+         
           />
         </div>
 
@@ -49,6 +48,5 @@ export default function AboutSection() {
           <button className={classes.readMore}>READ MORE</button>
         </div>
       </div>
-    </section>
   );
 }

@@ -1,44 +1,40 @@
-.section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 120px 16px;
-  background: #ffffff;
-}
+
 
 .container {
   width: 100%;
   max-width: 1201px;
   display: flex;
-  gap: 80px;
+
   align-items: center;
+
+height: 523px;
+
+opacity: 1;
+margin-top:120px;
+margin-left: 120px;
+border-width: 0px, 0px, 0px, 0px;
+
+border-style: solid;
+
+border-color: #FEF5D8;
+
+
+
 }
 
 .imageWrap {
-  position: relative;
-  width: 420px;
+  
   max-width: 100%;
-  aspect-ratio: 420 / 520;
+
+
+  width: 491px;
+height: 523px;
+opacity: 1;
+
+
 }
 
-.blueBg {
-  position: absolute;
-  inset: 0;
-  background: #eaf2ff;
-  border-radius: 24px;
-  z-index: 0;
-}
 
-.doctorImg {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  width: auto;
-  height: auto;
-  max-width: 90%;
-}
 
 .content {
   flex: 1;

@@ -1,24 +1,42 @@
 import Link from "next/link";
-import classes from "./navbarSection.module.css";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import Image from "next/image";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import classes from "./navbarSection.module.css";
 
 export default function MainNavbar() {
   return (
     <nav className={classes.Navbar}>
       <ul className={classes.menu}>
-        <Link className={classes.active} href="/#">
-          Home
-        </Link>
-        <Link href="/#">About Us</Link>
-        <Link href="/#">Services</Link>
-        <Link href="/#">
-          Pages <RiArrowDropDownLine />{" "}
-        </Link>
-        <Link href="/#">
-          Blog <RiArrowDropDownLine />{" "}
-        </Link>
-        <Link href="/#">Contact</Link>
+        <li>
+          <Link className={classes.active} href="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className={classes.link} href="/#">
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link className={classes.link} href="/#">
+            Services
+          </Link>
+        </li>
+        <li>
+          <Link className={classes.link} href="/#">
+            Pages <RiArrowDropDownLine />
+          </Link>
+        </li>
+        <li>
+          <Link className={classes.link} href="/#">
+            Blog <RiArrowDropDownLine />
+          </Link>
+        </li>
+        <li>
+          <Link className={classes.link} href="/#">
+            Contact
+          </Link>
+        </li>
       </ul>
 
       <div className={classes.SearchBox}>
@@ -28,7 +46,7 @@ export default function MainNavbar() {
           className={classes.Input}
         />
         <button className={classes.searchBtn}>
-          <Image src="/Search.png" alt="search icon" width={36} height={32} />
+          <Image src="/Search.png" alt="search" width={35} height={32} />
         </button>
       </div>
     </nav>
