@@ -3,38 +3,51 @@
   padding: 72px 16px;
   background: #ffffff;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-
 .label {
-  font-size: 11px;
-  letter-spacing: 2px;
-  color: #ff8a00;
-  font-weight: 600;
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff9140;
 }
-
 .heading {
   margin-top: 12px;
   font-size: 34px;
   line-height: 1.25;
   color: #0a2540;
+  font-family: Source Serif Pro;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 46px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
 }
-
 .heading span {
   color: #3b6cff;
+  font-family: Source Serif Pro;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 46px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
 }
-
-
-
 .slider {
   margin-top: 48px;
   position: relative;
 }
-
 .cards {
   display: flex;
   gap: 24px;
@@ -42,13 +55,9 @@
   scroll-snap-type: x mandatory;
   padding: 0 24px 16px;
 }
-
 .cards::-webkit-scrollbar {
   display: none;
 }
-
-
-
 .card {
   min-width: 260px;
   height: 340px;
@@ -61,15 +70,11 @@
   transition: all 0.35s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
-
 .active {
   background: #d8f0ff;
   transform: scale(1.05);
   box-shadow: 0 16px 40px rgba(59, 108, 255, 0.18);
 }
-
-
-
 .arrowLeft,
 .arrowRight {
   position: absolute;
@@ -78,77 +83,63 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #3b6cff;
-  color: #ffffff;
   border: none;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #ffffff;
+  border: 2px solid #5c85ff;
   z-index: 20;
+  color: #5c85ff;
 }
-
 .arrowLeft {
   left: 4px;
 }
-
 .arrowRight {
   right: 4px;
 }
-
-
-
 .dots {
   margin-top: 28px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
 .dots span {
   width: 8px;
   height: 8px;
   background: #ffd6b3;
   border-radius: 50%;
 }
-
 .activeDot {
   width: 10px;
   height: 10px;
   background: #ff8a00;
 }
-
-
-
 @media (min-width: 768px) {
   .heading {
     font-size: 40px;
   }
-
   .cards {
     gap: 32px;
     padding: 0 48px 20px;
   }
-
   .card {
     min-width: 300px;
     height: 380px;
   }
 }
-
-
-
 @media (min-width: 1024px) {
   .cards {
     justify-content: center;
     overflow: visible;
   }
-
   .arrowLeft {
     left: -20px;
   }
-
   .arrowRight {
     right: -20px;
   }
 }
+
+

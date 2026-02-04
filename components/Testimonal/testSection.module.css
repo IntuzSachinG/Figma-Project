@@ -22,11 +22,22 @@
 
 .label {
   display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.6px;
-  color: #ff8a3d;
-  margin-bottom: 12px;
+ 
+  color: #FF9140;
+
+ 
+
+  font-family: Plus Jakarta Sans;
+font-weight: 700;
+font-style: Bold;
+
+  font-size: 19px;
+  line-height: 1;          
+  letter-spacing: 0.15em;  
+
+
+text-transform: uppercase;
+
 }
 
 .heading {

@@ -14,7 +14,8 @@ function BlogCard({ image }) {
           Highlight: benefits of routine dental check-ups in children under 12
           years old
         </p>
-        <span className={classes.read}>READ MORE </span>
+        <span className={classes.read}>READ MORE <span>
+          <Image src="/Right.svg" alt="icon" width={14} height={13} /> </span>  </span>
       </div>
     </div>
   );
@@ -31,9 +32,10 @@ export default function BlogSection() {
             <h2 className={classes.title}>Our Latest Blog & News</h2>
           </div>
 
-          <button className={classes.moreBtn}>
-            FIND MORE 
-          </button>
+           <button className={classes.moreBtn}>
+            FIND MORE <span className={classes.icon}><Image src="/Right.svg" alt="icon" width={14} height={15} /></span>
+          </button> 
+          
         </div>
 
       
@@ -53,7 +55,8 @@ export default function BlogSection() {
                 Highlight: benefits of routine dental check-ups in children
                 under 12 years old
               </p>
-              <span className={classes.read}>READ MORE </span>
+              <span className={classes.read}>READ MORE <span>
+          <Image src="/Right.svg" alt="icon" width={14} height={13} /> </span></span>
             </div>
           </div>
           <div className={classes.right}>

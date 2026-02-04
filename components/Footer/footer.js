@@ -1,92 +1,119 @@
-import classes from "./footer.module.css"
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
-
-
-function Column({ title, items }) {
-  return (
-    <div className={classes.column}>
-      <h4>{title}</h4>
-      {items.map((item, i) => (
-        <span key={i}>{item}</span>
-      ))}
-    </div>
-  );
-}
+"use client";
+import Image from "next/image";
+import styles from "./footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className={classes.footer}>
-      <div className={classes.container}>
-     
-        <div className={classes.top}>
-          <div className={classes.brand}>
-            <div className={classes.logo}>
-               <span>Confident</span>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.top}>
+          <div className={styles.brand}>
+            <div className={styles.logo}>
+              <Image
+                src="/Frame.png"
+                alt="Dental Clinic"
+                width={40}
+                height={40}
+              />
+              <div>
+                <h3>Confident</h3>
+                <span>Dental Care Clinic</span>
+              </div>
             </div>
-            <p className={classes.sub}>Dental Care Clinic</p>
+
+            <form
+              className={styles.subscribe}
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <input type="email" placeholder="Your Email Here..." />
+              <button type="submit" aria-label="Subscribe"><span>
+                <Image src="/Latest.svg" alt="Latest" width={35} height={32} /></span></button>
+            </form>
           </div>
 
-          <div className={classes.subscribe}>
-            <input type="email" placeholder="Your Email Here..." />
-            <button>→</button>
-          </div>
-
-          <div className={classes.social}>
-            <FaInstagram />
-            <FaFacebookF />
-            <FaLinkedinIn />
-            <BsTwitterX />
+          <div className={styles.socials}>
+            <Link href="/#">
+              <Image
+                src="/INSTAGRAM.svg"
+                alt="Instagram"
+                width={18}
+                height={18}
+              />
+            </Link>
+            <Link href="/#">
+              <Image
+                src="/FACEBOOK.svg"
+                alt="Facebook"
+                width={18}
+                height={18}
+              />
+            </Link>
+            <Link href="/#">
+              <Image src="/LINKDLN.svg" alt="LinkedIn" width={18} height={18} />
+            </Link>
+            <Link href="/#">
+              <Image src="/TWITTER.svg" alt="X" width={18} height={18} />
+            </Link>
           </div>
         </div>
 
-        <hr className={classes.divider} />
+        <div className={styles.line}></div>
 
-   
-        <div className={classes.bottom}>
-          <div className={classes.hours}>
+        <div className={styles.bottom}>
+          <div className={styles.hours}>
             <h4>working hours</h4>
 
-            <div className={classes.row}>
+            <div className={styles.timeRow}>
               <span>Mon - Fri</span>
               <span>9AM - 8PM</span>
             </div>
 
-            <div className={classes.row}>
+            <div className={styles.timeRow}>
               <span>Sat - Sun</span>
               <span>9AM - 8PM</span>
             </div>
 
-            <p className={classes.copy}>
-               2026 CONFIDENT All Right Reserved.
-            </p>
+            <p className={styles.copy}>© 2026 CONFIDENT All Right Reserved.</p>
           </div>
 
-          <div className={classes.links}>
-            <Column
-              title="About"
-              items={["Home", "About Us", "Services", "Pages", "Contact"]}
-            />
-            <Column
-              title="Pages"
-              items={["Services", "Dentist", "Pricing", "Contact", "404 Page"]}
-            />
-            <Column
-              title="Support"
-              items={[
-                "Contact Us",
-                "Booking online",
-                "Social Media",
-              ]}
-            />
-            <Column
-              title="Contact Us"
-              items={["Social Media", "WhatsApp", "Email"]}
-            />
+           <div className={styles.line1}></div>
+
+          <div className={styles.links}>
+            <div>
+              <h4>About</h4>
+              <a>Home</a>
+              <a>About Us</a>
+              <a>Services</a>
+              <a>Pages</a>
+              <a>Contact</a>
+            </div>
+
+            <div>
+              <h4>Pages</h4>
+              <a>Services</a>
+              <a>Dentist</a>
+              <a>Pricing</a>
+              <a>Contact</a>
+              <a>404 Page</a>
+            </div>
+
+            <div>
+              <h4>Support</h4>
+              <a>Contact Us</a>
+              <a>Booking online</a>
+              <a>Social Media</a>
+            </div>
+
+            <div>
+              <h4>Contact Us</h4>
+              <a>Social Media</a>
+              <a>WhatsApp</a>
+              <a>Email</a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-

@@ -1,119 +1,228 @@
-.wrapper {
-  width: 100%;
-  padding: 40px 16px;
+.sectionWrapper {
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
 }
 
-.container {
+.bannerContainer {
+  background: #C7F0FD;
+
+  border-radius: 30px;
   width: 100%;
+ 
   max-width: 1320px;
-  background: #c9effa;
-  border-radius: 24px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
   justify-content: space-between;
-  padding: 64px 80px;
+  padding: 0 60px;
   position: relative;
-  overflow: hidden;
-  gap: 40px;
 }
 
 .content {
-  max-width: 520px;
+   flex: 1.2;
+
+  max-width: 550px;
+  height: 559px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+
+  max-width: 616px;
+
+
 }
 
-.tagline {
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  color: #ff8a3d;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 18px;
+.subTitle {
+  
+ 
+
+
+ 
+margin-top: 40px;
+ max-width: 616px;
+height: 24px;
+opacity: 1;
+font-family: Plus Jakarta Sans;
+font-weight: 700;
+font-style: Bold;
+
+  font-size: 19px;
+  line-height: 1;       
+  letter-spacing: 0.15em; 
+
+
+text-transform: uppercase;
+color: #FF9140;
+
+
+
 }
 
-.heading {
-  font-size: 48px;
-  line-height: 1.2;
-  color: #0a2540;
-  margin-bottom: 18px;
+.mainTitle {
+ 
+margin-top: 20px;
+  font-family: Source Serif Pro;
+font-weight: 600;
+font-style: SemiBold;
+
+  font-size: 60px;
+  line-height: 1.1;       
+  letter-spacing: -0.04em; 
+
+text-transform: capitalize;
+
+color: #142349;
+
+
+
 }
 
-.heading span {
-  color: #3b6cff;
-  text-decoration: underline;
+.highlight {
+  color: #4466ff;
+ 
+
+  font-family: Source Serif Pro;
+font-weight: 600;
+font-style: SemiBold;
+
+  font-size: 60px;
+  line-height: 1;       
+  letter-spacing: 0.02em; 
+
+
+text-transform: capitalize;
+text-decoration: underline;
+text-decoration-style: solid;
+
+text-decoration-thickness: 0%;
+
 }
 
 .description {
-  font-size: 15px;
-  color: #4f5d73;
-  max-width: 420px;
-  margin-bottom: 28px;
+
+  
+margin-top: 5px;
+  font-family: DM Sans;
+font-weight: 300;
+font-style: Light;
+font-size: 19px;
+line-height: 30px;
+letter-spacing: 0;
+vertical-align: middle;
+
+color: #142349;
+
+
 }
 
 .button {
-  background: #3b6cff;
-  color: #ffffff;
-  border: none;
-  border-radius: 999px;
-  padding: 12px 26px;
-  font-size: 13px;
+  margin-top: 10px;
+  background-color: #3366FF;
+
+  color: white;
+ 
+  text-decoration: none;
   font-weight: 600;
+
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
+ 
+
+width: 185px;
+height: 40px;
+opacity: 1;
+border-radius: 192px;
+padding-top: 16px;
+padding-right: 28px;
+padding-bottom: 16px;
+padding-left: 28px;
+
+
+
+font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-style: SemiBold;
+
+  font-size: 15px;
+  line-height: 1;       
+  letter-spacing: 0.15em;  
+
+vertical-align: middle;
+text-transform: uppercase;
+
+
+
+
+}
+.icon{
+  
+  color: #ffffff;
 }
 
-.imageWrapper {
+
+ .imageWrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   position: relative;
-  width: 420px;
-  max-width: 100%;
-  aspect-ratio: 4 / 5;
+
+
 }
 
-.image {
-  object-fit: contain;
-}
+.doctorImage {
+
+  min-height: 620px;
+  width: auto !important;
+  max-width: none !important;
+  position: absolute;
+ 
+  bottom: 0;
+  right: -20px;
+} 
+
+
+
+
+
 
 @media (max-width: 1024px) {
-  .container {
-    padding: 56px 40px;
+  .bannerContainer {
+    padding: 0 40px;
   }
-
-  .heading {
-    font-size: 40px;
+  .doctorImage {
+    height: 100% !important;
+    right: 0;
   }
 }
 
-@media (max-width: 768px) {
-  .container {
+@media (max-width: 850px) {
+  .bannerContainer {
     flex-direction: column;
     text-align: center;
-    padding: 48px 24px;
+    padding: 60px 20px 0 20px;
+    align-items: center;
+    overflow: hidden;
   }
 
   .content {
+    padding: 0 0 40px 0;
     max-width: 100%;
-  }
-
-  .description {
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
   }
 
   .imageWrapper {
     width: 100%;
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 480px) {
-  .heading {
-    font-size: 32px;
+    height: 350px;
+    justify-content: center;
   }
 
-  .description {
-    font-size: 14px;
+  .doctorImage {
+    position: relative;
+    height: 100% !important;
+    right: auto;
   }
 }
