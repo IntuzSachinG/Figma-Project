@@ -14,7 +14,7 @@ import TestimonialSection from "@/components/Testimonal/testSection";
 export default function HomePage() {
   return (
     <>
-      <div className="container">
+   <div className="container">
         <TopInfoBanner />
         <MainNavbar />
         <Hero />

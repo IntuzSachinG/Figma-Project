@@ -42,7 +42,7 @@ export default function MainNavbar() {
       <div className={classes.SearchBox}>
         <input
           type="text"
-          placeholder="Search in here"
+          placeholder="Search In here"
           className={classes.Input}
         />
         <button className={classes.searchBtn}>

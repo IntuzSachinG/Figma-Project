@@ -1,7 +1,7 @@
 .Navbar {
   width: 100%;
   max-width: 1200px;
-  height: 67px;
+  min-height: 67px;
   opacity: 1;
   margin-top: 30px;
   margin-left: 120px;
@@ -29,9 +29,10 @@
 }
 
 .active {
-  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   font-size: 15px;
+  font-style: normal;
   letter-spacing: 0.15em;
   text-transform: capitalize;
   text-decoration: none;
@@ -39,7 +40,7 @@
 }
 
 .link {
-  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 0.15em;
@@ -78,6 +79,16 @@
   border: none;
   outline: none;
   font-size: 13px;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+
+  color: #adc2ff;
+  opacity: 0.4;
 }
 
 .searchBtn {
