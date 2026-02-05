@@ -27,8 +27,16 @@ export default function Footer() {
               onSubmit={(e) => e.preventDefault()}
             >
               <input type="email" placeholder="Your Email Here..." />
-              <button type="submit" aria-label="Subscribe"><span>
-                <Image src="/Latest.svg" alt="Latest" width={35} height={32} /></span></button>
+              <button type="submit" aria-label="Subscribe">
+                <span>
+                  <Image
+                    src="/Latest.svg"
+                    alt="Latest"
+                    width={31}
+                    height={31}
+                  />
+                </span>
+              </button>
             </form>
           </div>
 
@@ -77,7 +85,7 @@ export default function Footer() {
             <p className={styles.copy}>© 2026 CONFIDENT All Right Reserved.</p>
           </div>
 
-           <div className={styles.line1}></div>
+          <div className={styles.line1}></div>
 
           <div className={styles.links}>
             <div>

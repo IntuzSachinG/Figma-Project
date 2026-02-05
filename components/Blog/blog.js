@@ -1,6 +1,6 @@
 import Image from "next/image";
-import classes from "./blog.module.css"
-
+import { MdArrowForwardIos } from "react-icons/md";
+import classes from "./blog.module.css";
 
 function BlogCard({ image }) {
   return (
@@ -8,14 +8,17 @@ function BlogCard({ image }) {
       <Image src={image} alt="" fill className={classes.image} />
 
       <div className={classes.overlay}>
-
         <span className={classes.date}>December 15, 2024</span>
         <p className={classes.text}>
           Highlight: benefits of routine dental check-ups in children under 12
           years old
         </p>
-        <span className={classes.read}>READ MORE <span>
-          <Image src="/Right.svg" alt="icon" width={14} height={13} /> </span>  </span>
+        <span className={classes.read}>
+          READ MORE{" "}
+          <span>
+            <Image src="/Right.svg" alt="icon" width={14} height={13} />{" "}
+          </span>{" "}
+        </span>
       </div>
     </div>
   );
@@ -25,22 +28,21 @@ export default function BlogSection() {
   return (
     <section className={classes.wrapper}>
       <div className={classes.container}>
-    
         <div className={classes.header}>
           <div>
             <span className={classes.label}>OUR BLOG</span>
             <h2 className={classes.title}>Our Latest Blog & News</h2>
           </div>
 
-           <button className={classes.moreBtn}>
-            FIND MORE <span className={classes.icon}><Image src="/Right.svg" alt="icon" width={14} height={15} /></span>
-          </button> 
-          
+          <button className={classes.button7}>
+            <span className={classes.text8}>FIND MORE</span>
+            <span className={classes.arrow9}>
+              <MdArrowForwardIos />
+            </span>
+          </button>
         </div>
 
-      
         <div className={classes.grid}>
-         
           <div className={classes.bigCard}>
             <Image
               src="/Mask group.svg"
@@ -55,8 +57,17 @@ export default function BlogSection() {
                 Highlight: benefits of routine dental check-ups in children
                 under 12 years old
               </p>
-              <span className={classes.read}>READ MORE <span>
-          <Image src="/Right.svg" alt="icon" width={14} height={13} /> </span></span>
+              <span className={classes.read}>
+                READ MORE{" "}
+                <span>
+                  <Image
+                    src="/Right.svg"
+                    alt="icon"
+                    width={14}
+                    height={13}
+                  />{" "}
+                </span>
+              </span>
             </div>
           </div>
           <div className={classes.right}>
@@ -68,4 +79,3 @@ export default function BlogSection() {
     </section>
   );
 }
-

@@ -18,21 +18,16 @@
 }
 
 .label {
- 
-
-
   font-family: Plus Jakarta Sans;
-font-weight: 700;
-font-style: Bold;
+  font-weight: 700;
+  font-style: Bold;
 
   font-size: 19px;
-  line-height: 1;          
-  letter-spacing: 0.15em; 
+  line-height: 1;
+  letter-spacing: 0.15em;
 
-
-text-transform: uppercase;
-color: #FF9140;
-
+  text-transform: uppercase;
+  color: #ff9140;
 }
 
 .title {
@@ -41,43 +36,41 @@ color: #FF9140;
   margin-top: 10px;
 }
 
+.button7 {
+  width: 206px;
+  height: 48px;
 
-.moreBtn {
-  display: inline-flex;
+  background: #3366ff;
+  border: none;
+  border-radius: 192px;
+
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 
-  background-color: #3b6cff;
-  color: #ffffff;
-  border: none;
   cursor: pointer;
+  padding: 0;
+  margin-bottom: 22px;
+}
 
-  padding: 14px 32px;
-  min-width: 206px;
-  border-radius: 192px;
-
+.text8 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 19px;
   line-height: 1.4;
-  letter-spacing: 0.03em; 
+  letter-spacing: 0.03em;
+
   text-transform: uppercase;
+  color: #ffffff;
 
-  transition: background-color 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
 }
 
-.moreBtn:hover {
-  background-color: #2f5ae0;
-}
-
-.moreBtn:active {
-  transform: scale(0.97);
-}
-
-.icon {
-  display: flex;
-  align-items: center;
+.arrow9 {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .grid {
@@ -129,7 +122,6 @@ color: #FF9140;
   font-weight: 700;
   color: #cfe6ff;
   margin-bottom: 8px;
-  
 }
 
 .text {
@@ -143,16 +135,12 @@ color: #FF9140;
 
 .read {
   font-size: 16px;
-  color: #3366FF;
+  color: #3366ff;
   font-weight: 900;
-   margin-left: 30px;
-   cursor: pointer;
-   font-weight: 700;
+  margin-left: 30px;
+  cursor: pointer;
+  font-weight: 700;
 }
-
-
-
-
 
 @media (max-width: 1024px) {
   .grid {

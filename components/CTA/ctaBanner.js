@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./ctaBanner.module.css";
 import Link from "next/link";
+import { MdArrowForwardIos } from "react-icons/md";
 
 export default function AppointmentBanner() {
   return (
@@ -16,12 +17,12 @@ export default function AppointmentBanner() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore.
           </p>
-           <Link href="#" className={styles.button}>
-            BOOK NOW <span className={styles.icon}><Image src="/Right.svg" alt="icon" width={14} height={15} /></span>
+          <Link href="#" className={styles.button}>
+            <span className={styles.text}>
+              BOOK NOW <MdArrowForwardIos className={styles.icon} />
+            </span>
           </Link>
-          
         </div>
-       
 
         <div className={styles.imageWrapper}>
           <Image
