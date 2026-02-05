@@ -1,15 +1,15 @@
 "use client";
 import Image from "next/image";
-import styles from "./footer.module.css";
+import classes from "./footer.module.css";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.top}>
-          <div className={styles.brand}>
-            <div className={styles.logo}>
+    <footer className={classes.footer}>
+      <div className={classes.container}>
+        <div className={classes.top}>
+          <div className={classes.brand}>
+            <div className={classes.logo}>
               <Image
                 src="/Frame.png"
                 alt="Dental Clinic"
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
 
             <form
-              className={styles.subscribe}
+              className={classes.subscribe}
               onSubmit={(e) => e.preventDefault()}
             >
               <input type="email" placeholder="Your Email Here..." />
@@ -40,7 +40,7 @@ export default function Footer() {
             </form>
           </div>
 
-          <div className={styles.socials}>
+          <div className={classes.socials}>
             <Link href="/#">
               <Image
                 src="/INSTAGRAM.svg"
@@ -66,28 +66,28 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.line}></div>
+        <div className={classes.line}></div>
 
-        <div className={styles.bottom}>
-          <div className={styles.hours}>
+        <div className={classes.bottom}>
+          <div className={classes.hours}>
             <h4>working hours</h4>
 
-            <div className={styles.timeRow}>
+            <div className={classes.timeRow}>
               <span>Mon - Fri</span>
               <span>9AM - 8PM</span>
             </div>
 
-            <div className={styles.timeRow}>
+            <div className={classes.timeRow}>
               <span>Sat - Sun</span>
               <span>9AM - 8PM</span>
             </div>
 
-            <p className={styles.copy}>© 2026 CONFIDENT All Right Reserved.</p>
+            <p className={classes.copy}>© 2026 CONFIDENT All Right Reserved.</p>
           </div>
 
-          <div className={styles.line1}></div>
+          <div className={classes.line1}></div>
 
-          <div className={styles.links}>
+          <div className={classes.links}>
             <div>
               <h4>About</h4>
               <a>Home</a>

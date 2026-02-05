@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./serviceList.module.css";
+import classes from "./serviceList.module.css";
 import Link from "next/link";
 
 const services = [
@@ -37,18 +37,18 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <div className={styles.container}>
-      <p className={styles.subTitle}>What We Provide</p>
-      <h2 className={styles.mainTitle}>
-        What <span className={styles.blueText}>The Treatments</span> <br /> Do
+    <div className={classes.container}>
+      <p className={classes.subTitle}>What We Provide</p>
+      <h2 className={classes.mainTitle}>
+        What <span className={classes.blueText}>The Treatments</span> <br /> Do
         We Offer?
       </h2>
 
-      <div className={styles.grid}>
+      <div className={classes.grid}>
         {services.map((item, i) => (
-          <div key={i} className={styles.card}>
+          <div key={i} className={classes.card}>
             <div
-              className={styles.iconWrapper}
+              className={classes.iconWrapper}
               style={{ backgroundColor: item.bg }}
             >
               <Image
@@ -60,8 +60,8 @@ export default function ServicesSection() {
             </div>
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
-            <Link href="/#" className={styles.learnMore}>
-              Learn More<span className={styles.icon}><Image src="/Right.svg" alt="icon" width={14} height={12} /></span>
+            <Link href="/#" className={classes.learnMore}>
+              Learn More<span className={classes.icon}><Image src="/Right.svg" alt="icon" width={14} height={12} /></span>
             </Link>
           </div>
         ))}
