@@ -45,7 +45,9 @@ export default function AboutSection() {
         </div>
         <div className={classes.btnn}>
           <span className={classes.readMore}>READ MORE</span>
+          <div className={classes.icon4}>
           <Image src="/Right.svg" alt="icon" width={14} height={15} />
+          </div>
         </div>
       </div>
     </div>

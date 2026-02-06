@@ -6,6 +6,7 @@ import AppointmentBanner from "@/components/CTA/ctaBanner";
 import DentistSection from "@/components/Dentist-Section/bestDentist";
 import Footer from "@/components/Footer/footer";
 import Hero from "@/components/Hero-Section/heroSection";
+import MainHeader from "@/components/Main-Header/mainHeader";
 import MainNavbar from "@/components/Navbar-Section/navbarSection";
 import ServicesSection from "@/components/Service-List/serviceList";
 import StatsSection from "@/components/Statistic/statSection";
@@ -14,10 +15,15 @@ import TestimonialSection from "@/components/Testimonal/testSection";
 export default function HomePage() {
   return (
     <>
+    
    <div className="container">
-        <TopInfoBanner />
+    <div className="mainheader">
+        <MainHeader/>
+        </div>
+        {/* <TopInfoBanner />
         <MainNavbar />
-        <Hero />
+        <Hero /> */}
+       
         <ClinicPartners />
         <AboutSection />
         <ServicesSection />

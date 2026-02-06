@@ -1,4 +1,4 @@
-.container {
+/* .container {
   background-color: #f4faff;
   padding: 60px 40px;
   text-align: center;
@@ -6,28 +6,73 @@
   max-width: 1200px;
   margin: 40px auto;
   border-radius: 25px;
+} */
+
+.container{
+max-width: 1320px;
+min-height: 1156px;
+opacity: 1;
+/* top: 2064px; */
+/* left: 60px; */
+border-radius: 25px;
+
+margin-top: 120px;
+background: #EFF6FF;
+  /* text-align: center; */
+
 }
 
+.textcontainer{
+  max-width: 491px;
+min-height: 170px;
+
+/* opacity: 1; */
+/* top: 2164px; */
+/* left: 475px; */
+padding-top: 100px;
+margin-left: 415px;
+margin-right: 414px;
+/* padding-bottom:  886px; */
+gap: 30px;
+
+}
+
+.texttitle{
+  max-width: 491px;
+min-height: 24px;
+opacity: 1;
+
+}
 .subTitle {
   color: #ff9140;
 
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  font-weight: 700;
+  /* text-transform: uppercase; */
+  /* font-size: 13px; */
+  /* letter-spacing: 1.5px; */
+  /* font-weight: 700; */
   margin-bottom: 8px;
 
   opacity: 1;
 
-  font-family: Plus Jakarta Sans;
+  font-family: "Plus Jakarta Sans",sans-serif;
   font-weight: 700;
-  font-style: Bold;
+  /* font-style: Bold; */
   font-size: 19px;
   line-height: 1;
   letter-spacing: 0.15em;
 
   text-align: center;
   text-transform: uppercase;
+}
+
+
+.textmain{
+  max-width: 491px;
+min-height: 116px;
+
+opacity: 1;
+margin-top: 30px;
+
 }
 
 .mainTitle {

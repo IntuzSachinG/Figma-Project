@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoIosArrowDown } from "react-icons/io";
 import classes from "./navbarSection.module.css";
 
 export default function MainNavbar() {
@@ -24,12 +24,14 @@ export default function MainNavbar() {
         </li>
         <li>
           <Link className={classes.link} href="/#">
-            Pages <RiArrowDropDownLine />
+            {/* Pages<IoIosArrowDown /> */}
+            Pages<Image src="/Arrow.svg" alt="" width={13} height={14}/>
           </Link>
         </li>
         <li>
           <Link className={classes.link} href="/#">
-            Blog <RiArrowDropDownLine />
+            {/* Blog<IoIosArrowDown />  */}
+            Blog<Image src="/Arrow.svg" alt="" width={13} height={14}/>
           </Link>
         </li>
         <li>
@@ -45,9 +47,22 @@ export default function MainNavbar() {
           placeholder="Search In here"
           className={classes.Input}
         />
-        <button className={classes.searchBtn}>
+        {/* <button className={classes.searchBtn}>
           <Image src="/Search.png" alt="search" width={35} height={32} />
-        </button>
+        </button> */}
+
+        <Link
+  href="/"
+  className={classes.searchBtn}
+  aria-label="Search"
+>
+  <Image
+    src="/Search.png"
+    alt=""
+    width={35}
+    height={32}
+  />
+</Link>
       </div>
     </nav>
   );

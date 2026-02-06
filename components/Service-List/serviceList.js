@@ -38,11 +38,16 @@ const services = [
 export default function ServicesSection() {
   return (
     <div className={classes.container}>
+      <div className={classes.textcontainer}>
+        <div className={classes.texttitle}>
       <p className={classes.subTitle}>What We Provide</p>
+      </div>
+      <div className={classes.textmain}>
       <h2 className={classes.mainTitle}>
-        What <span className={classes.blueText}>The Treatments</span> <br /> Do
-        We Offer?
+        What <span className={classes.blueText}>The Treatments</span><br /><span className={classes.textt}>Do We Offer?</span>
       </h2>
+      </div>
+      </div>
 
       <div className={classes.grid}>
         {services.map((item, i) => (

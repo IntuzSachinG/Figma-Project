@@ -22,13 +22,15 @@
 .wrapper {
   width: 100%;
   max-width: 1440px;
-  min-height: 60px;
+  min-height: 76px;
+
   display: flex;
   opacity: 1;
-  /* position: relative;
+   /* position: relative;  */
 
-  top: 16px; */
-  margin-top:16px ;
+  /* top: 16px;  */
+  /* margin-top: 16px; */
+  padding-top: 16px;
   border: none;
 }
 
@@ -36,6 +38,7 @@
   display: flex;
   width: 163px;
   height: 44px;
+  /* height: auto; */
   opacity: 1;
   /* position: relative;
 
@@ -46,14 +49,14 @@
 }
 
 .ImageLogo {
-  width: 41.48816680908203px;
-  height: 41.505882263183594px;
+  width: 42px;
+  height: 42px;
   /* position: relative; */
 
   opacity: 1;
   /* top: 0.24px; */
   /* left: 0.26px; */
-  right: 8px;
+  /* right: 8px; */
   /* border-width: 0.25px; */
 
   /* border: 0.25px solid; */
@@ -83,10 +86,13 @@
 
   opacity: 1;
 
+  /* font-family: "Plus Jakarta Sans", sans-serif; */
   font-family: "Plus Jakarta Sans", sans-serif;
+  /* font-family: "Plus Jakarta Sans"; */
+  /* font-family: " sans-serif"; */
 
   font-weight: 600;
-  font-style: SemiBold;
+  /* font-style: SemiBold; */
   font-size: 22px;
   left: 170px;
   line-height: 100%;
@@ -104,11 +110,11 @@
   opacity: 1;
   /* position: relative; */
   /* top: 26px; */
-  padding-bottom: 2px;;
+  padding-bottom: 2px;
 
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  /* font-style: medium; */
   font-size: 12px;
 
   line-height: 1;
@@ -154,14 +160,14 @@
 .text1 {
   width: 164px;
   height: 20px;
- /* padding-left: 12px; */
- padding-top: 2px;
- padding-bottom: 2px;
+  /* padding-left: 12px; */
+  padding-top: 2px;
+  padding-bottom: 2px;
 
   opacity: 1;
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
-  font-style: Light;
+  /* font-style: Light; */
   font-size: 15px;
   line-height: 1;
   letter-spacing: 0.02em;
@@ -169,13 +175,30 @@
   color: #142349;
 }
 
+/* .san{
+   width: 164px;
+  height: 20px;
+   padding-top: 2px;
+ padding-bottom: 2px;
+
+  opacity: 1;
+  font-family:  "sans-serif";
+    font-weight: 300;
+     font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  color: #142349;
+
+} */
+
 .phone {
   width: 175px;
   height: 24px;
   display: flex;
   opacity: 1;
   gap: 12px;
-  position: relative;
+  /* position: relative; */
 }
 
 .icon2 {
@@ -189,21 +212,21 @@
   width: 139px;
   height: 20px;
 
-   /* padding-left: 12px; */
- padding-top: 4px;
- padding-bottom: 2px;
+  /* padding-left: 12px; */
+  padding-top: 4px;
+  padding-bottom: 2px;
 
   opacity: 1;
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
-  font-style: Light;
+  /* font-style: Light; */
   font-size: 15px;
 
   line-height: 1;
   letter-spacing: 0.02em;
   vertical-align: middle;
   color: #142349;
-  left: 36px;
+  /* left: 36px; */
 }
 
 .button {
@@ -213,7 +236,7 @@
   border: none;
 
   margin-left: 49px;
-  margin-right:120px;
+  margin-right: 120px;
   gap: 10px;
   border-radius: 192px;
   padding-top: 10.5px;
@@ -221,10 +244,18 @@
   padding-bottom: 10.5px;
   padding-left: 28px;
   background: #3366ff;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.35);
 }
 
 .textbtn {
@@ -261,7 +292,7 @@
     border-bottom: 1px solid #c2d1ff;
   }
 }
-
+/* 
 @media (max-width: 1200px) {
   .logo {
     margin-left: 40px;
@@ -343,5 +374,86 @@
 
   .textbtn {
     letter-spacing: 0.1em;
+  }
+} */
+
+@media (min-width: 1440px) {
+  .ContainerLogo {
+    margin-left: 120px;
+  }
+
+  .info {
+    margin-left: 392px;
+  }
+
+  .button {
+    margin-left: 49px;
+    margin-right: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ContainerLogo {
+    margin-left: 40px;
+  }
+
+  .info {
+    margin-left: auto;
+    margin-right: 24px;
+    gap: 24px;
+  }
+
+  .button {
+    margin-left: 24px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+
+  .info {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ContainerLogo {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .logoText {
+    align-items: center;
+    text-align: center;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .location,
+  .phone {
+    justify-content: center;
+  }
+
+  .button {
+    width: auto;
+    margin: 8px 0 0;
   }
 }
