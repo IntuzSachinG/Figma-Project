@@ -8,53 +8,55 @@ const testimonials = [
     img: "/Group 38.svg",
     name: "Ryan Gigs",
     role: "Patient",
-    rating: 5,
+    rating: 4,
     text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.",
   },
   {
     id: 2,
     img: "/Group 38 (1).svg",
-    name: "Sophia Lee",
+    name: "Ryan Gigs",
     role: "Patient",
     rating: 4,
-    text: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.",
+    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.",
   },
   {
     id: 3,
     img: "/Group 38 (2).svg",
-    name: "Michael John",
+    name: "Ryan Gigs",
     role: "Patient",
-    rating: 5,
-    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.",
+    rating: 4,
+    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.",
   },
   {
     id: 4,
     img: "/Group 38 (3).svg",
-    name: "Emma Watson",
+    name: "Ryan Gigs",
     role: "Patient",
     rating: 4,
-    text: "Et harum quidem rerum facilis est et expedita distinctio nam libero tempore.",
+    text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.",
   },
 ];
 
-function TestimonialCard({ data }) {
+function TestimonialCard({ data, className }) {
   return (
-    <div className={classes.card}>
+    <div className={`${classes.card} ${className}`}>
       <div className={classes.cardAvatar}>
-        <Image src={data.img} alt={data.name} width={48} height={48} />
+        <Image src={data.img} alt={data.name} width={95} height={64} />
       </div>
 
-      <div className={classes.stars}>
-        {[...Array(5)].map((_, i) =>
-          i < data.rating ? <MdStar key={i} /> : <MdStarBorder key={i} />,
-        )}
-      </div>
+      <div className={classes.cardBody}>
+        <div className={classes.stars}>
+          {[...Array(5)].map((_, i) =>
+            i < data.rating ? <MdStar key={i} /> : <MdStarBorder key={i} />,
+          )}
+        </div>
 
-      <p className={classes.text}>{data.text}</p>
+        <p className={classes.text}>{data.text}</p>
 
-      <div className={classes.author}>
-        <strong>{data.name}</strong>
-        <span>{data.role}</span>
+        <div className={classes.author}>
+          <strong>{data.name}</strong>
+          <span>{data.role}</span>
+        </div>
       </div>
     </div>
   );
@@ -62,27 +64,27 @@ function TestimonialCard({ data }) {
 
 export default function TestimonialSection() {
   return (
-    <section className={classes.wrapper}>
-      <div className={classes.container}>
-        <div className={classes.left}>
-          <span className={classes.label}>TESTIMONIAL</span>
+    <div className={classes.container}>
+      <div className={classes.leftSection}>
+        <div className={classes.labelDiv}>TESTIMONIAL</div>
 
-          <h2 className={classes.heading}>
-            Enhancing Your Smile & <br />
-            <span>Your Confidence</span>
-          </h2>
-
-          <div className={classes.orbit}>
-            <Image src="/Group 37.svg" alt="" width={472} height={410} />
-          </div>
-        </div>
-
-        <div className={classes.cards}>
-          {testimonials.map((item) => (
-            <TestimonialCard key={item.id} data={item} />
-          ))}
+        <div className={classes.headingDiv}>
+          <div className={classes.headingLine}>Enhancing Your Smile &</div>
+          <div className={classes.headingHighlight}>Your Confidence</div>
         </div>
       </div>
-    </section>
+
+      <div className={classes.orbitDiv}>
+        <Image src="/Group 37.svg" alt="Orbit" width={472} height={410} />
+      </div>
+
+      <div className={classes.cardsWrapper}>
+        {testimonials.map((item) => (
+          <div className={classes.cardBox} key={item.id}>
+            <TestimonialCard data={item} />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

@@ -28,14 +28,16 @@ export default function Footer() {
             >
               <input type="email" placeholder="Your Email Here..." />
               <button type="submit" aria-label="Subscribe">
-                <span>
-                  <Image
-                    src="/Latest.svg"
-                    alt="Latest"
-                    width={31}
-                    height={31}
-                  />
-                </span>
+                <Link href="/">
+                  <span>
+                    <Image
+                      src="/Latest.svg"
+                      alt="Latest"
+                      width={35}
+                      height={32}
+                    />
+                  </span>
+                </Link>
               </button>
             </form>
           </div>
@@ -45,23 +47,23 @@ export default function Footer() {
               <Image
                 src="/INSTAGRAM.svg"
                 alt="Instagram"
-                width={18}
-                height={18}
+                width={41}
+                height={40}
               />
             </Link>
             <Link href="/#">
               <Image
                 src="/FACEBOOK.svg"
                 alt="Facebook"
-                width={18}
-                height={18}
+                width={41}
+                height={40}
               />
             </Link>
             <Link href="/#">
-              <Image src="/LINKDLN.svg" alt="LinkedIn" width={18} height={18} />
+              <Image src="/LINKDLN.svg" alt="LinkedIn" width={41} height={40} />
             </Link>
             <Link href="/#">
-              <Image src="/TWITTER.svg" alt="X" width={18} height={18} />
+              <Image src="/TWITTER.svg" alt="X" width={41} height={40} />
             </Link>
           </div>
         </div>
@@ -90,34 +92,34 @@ export default function Footer() {
           <div className={classes.links}>
             <div>
               <h4>About</h4>
-              <a>Home</a>
-              <a>About Us</a>
-              <a>Services</a>
-              <a>Pages</a>
-              <a>Contact</a>
+              <Link href="/#">Home</Link>
+              <Link href="/#">About Us</Link>
+              <Link href="/#">Services</Link>
+              <Link href="/#">Pages</Link>
+              <Link href="/#">Contact</Link>
             </div>
 
             <div>
               <h4>Pages</h4>
-              <a>Services</a>
-              <a>Dentist</a>
-              <a>Pricing</a>
-              <a>Contact</a>
-              <a>404 Page</a>
+              <Link href="/#">Services</Link>
+              <Link href="/#">Dentist</Link>
+              <Link href="/#">Pricing</Link>
+              <Link href="/#">Contact</Link>
+              <Link href="/#">404 Page</Link>
             </div>
 
             <div>
               <h4>Support</h4>
-              <a>Contact Us</a>
-              <a>Booking online</a>
-              <a>Social Media</a>
+              <Link href="/#">Contact Us</Link>
+              <Link href="/#">Booking online</Link>
+              <Link href="/#">Social Media</Link>
             </div>
 
             <div>
               <h4>Contact Us</h4>
-              <a>Social Media</a>
-              <a>WhatsApp</a>
-              <a>Email</a>
+              <Link href="/#">Social Media</Link>
+              <Link href="/#">WhatsApp</Link>
+              <Link href="/#">Email</Link>
             </div>
           </div>
         </div>

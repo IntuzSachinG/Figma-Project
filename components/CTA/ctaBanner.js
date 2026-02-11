@@ -5,36 +5,47 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 export default function AppointmentBanner() {
   return (
-    <section className={classes.sectionWrapper}>
-      <div className={classes.bannerContainer}>
+    <div className={classes.bannerContainer}>
+      <div className={classes.container}>
         <div className={classes.content}>
-          <p className={classes.subTitle}>Book Dental Appointment</p>
-          <h1 className={classes.mainTitle}>
-            Get <span className={classes.highlight}>10%-Off</span> Your <br />{" "}
-            First Visit
-          </h1>
-          <p className={classes.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore.
-          </p>
-          <Link href="#" className={classes.button}>
-            <span className={classes.text}>
-              BOOK NOW <MdArrowForwardIos className={classes.icon} />
-            </span>
-          </Link>
+          <div className={classes.textt}>
+            <div className={classes.textfirst}>
+              <div className={classes.subTitle}>Book Dental Appointment</div>
+              <div className={classes.mainTitle}>
+                Get <span className={classes.highlight}>10%-Off</span> Your{" "}
+              </div>
+              <div className={classes.tx2}>First Visit</div>
+            </div>
+            <p className={classes.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              <br />
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+          </div>
+
+          <div className={classes.button}>
+            <div className={classes.btntextt}>
+              <div className={classes.book}>
+                <Link href="#">BOOK NOW</Link>
+              </div>
+              <div className={classes.btniconn}>
+                <MdArrowForwardIos />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className={classes.imageWrapper}>
           <Image
             src="/Item 03.svg"
             alt="Dental Professional"
-            width={500}
-            height={600}
+            width={390}
+            height={559}
             className={classes.doctorImage}
             priority
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

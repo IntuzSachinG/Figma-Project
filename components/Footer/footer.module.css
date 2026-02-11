@@ -1,11 +1,11 @@
 .footer {
   background: #eaf9ff;
   padding: 56px 16px;
+  margin-top: 120px;
 }
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
 }
 
 .top {
@@ -14,6 +14,7 @@
   justify-content: space-between;
   gap: 32px;
   flex-wrap: wrap;
+  margin-left: 120px;
 }
 
 .brand {
@@ -32,11 +33,13 @@
   margin: 0;
   font-size: 18px;
   color: #2952ce;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .logo span {
   font-size: 12px;
   color: #5c85ff;
+  font-family: "DM Sans", sans-serif;
 }
 
 .subscribe {
@@ -44,7 +47,8 @@
   background: #ffffff;
   border-radius: 999px;
   overflow: hidden;
-  width: fit-content;
+
+  width: 289px;
 }
 
 .subscribe input {
@@ -53,6 +57,8 @@
   outline: none;
   font-size: 14px;
   width: 200px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  opacity: 0.4;
 }
 
 .subscribe button {
@@ -61,20 +67,28 @@
   cursor: pointer;
   background: #fff;
   padding-top: 4px;
+  margin-left: 44px;
 }
 
 .socials {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  padding-right: 120px;
+  padding-top: 50px;
 }
 
 .socials a {
   width: 36px;
   height: 36px;
-  background: #ffffff;
+
   border-radius: 50%;
   display: grid;
   place-items: center;
+}
+
+.socials img:hover {
+  background-color: #5c85ff;
+  border-radius: 50%;
 }
 
 .line {
@@ -82,6 +96,8 @@
   background: #cfe8f3;
   margin: 32px 0;
   color: #c2d1ff;
+  max-width: 1190px;
+  margin-left: 120px;
 }
 
 .line1 {
@@ -95,16 +111,18 @@
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
+  margin-left: 120px;
 }
 
 .hours {
-  min-width: 260px;
+  min-width: 360px;
 }
 
 .hours h4 {
   font-size: 14px;
   margin-bottom: 16px;
   text-transform: lowercase;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .timeRow {
@@ -116,11 +134,13 @@
 }
 .timeRow span {
   color: #5c85ff;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .copy {
-  margin-top: 24px;
+  margin-top: 40px;
   font-size: 12px;
   color: #64748b;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .links {
@@ -128,11 +148,14 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 48px;
   flex: 1;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.8;
 }
 
 .links h4 {
   font-size: 14px;
   margin-bottom: 12px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .links a {
@@ -141,11 +164,29 @@
   color: #475569;
   margin-bottom: 8px;
   cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
-  .links {
-    grid-template-columns: repeat(2, 1fr);
+  .top {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .line {
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 100%;
+  }
+
+  .bottom {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .socials {
+    padding-right: 24px;
   }
 }
 
@@ -153,10 +194,36 @@
   .top {
     flex-direction: column;
     align-items: flex-start;
+    gap: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .socials {
+    padding-right: 0;
+    padding-top: 24px;
   }
 
   .bottom {
+    margin-left: 16px;
+    margin-right: 16px;
     flex-direction: column;
+  }
+
+  .links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .line {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .hours {
+    min-width: 0;
+    width: 100%;
   }
 
   .links {

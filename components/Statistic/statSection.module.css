@@ -1,71 +1,100 @@
-.section {
-  width: 100%;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  padding: 80px 0;
-}
-
 .container {
   max-width: 1320px;
+  min-height: 292px;
   width: 100%;
-  padding: 0 20px;
-
+  margin-top: 120px;
+  margin-left: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 44px rgba(0, 0, 0, 0.03);
 }
 
 .item {
   flex: 1;
   text-align: center;
 }
-
+.content {
+  position: relative;
+  display: inline-block;
+}
 .number {
-  display: block;
-  font-size: 72px;
-  font-weight: 700;
-  color: #8fd3f4;
-  line-height: 1;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 113px;
+  line-height: 92px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #8fe1fa;
+  opacity: 0.9;
 }
 
 .label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+
   display: block;
+
   margin-top: 8px;
-  font-size: 13px;
-  letter-spacing: 2px;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
-  color: #0a2540;
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #142349;
 }
 
 .divider {
   width: 1px;
-  height: 80px;
-  background: #e6edf5;
+  height: 124px;
+  background: #c2d1ff;
+  opacity: 0.3;
 }
 
 @media (max-width: 1024px) {
   .container {
-    padding: 40px 20px;
-  }
-
-  .number {
-    font-size: 60px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
-    gap: 32px;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 16px;
   }
 
   .divider {
-    width: 60px;
+    width: 60%;
     height: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .number {
-    font-size: 52px;
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  .label {
+    font-size: 16px;
   }
 }
